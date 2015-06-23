@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/help_title"
+        layout="@layout/title_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:text="Ⅰ.MeetingComing是一款面向商务会议管理的软件。使用后，会议管理将变得更加轻松。"
+        android:textColor="@color/txt_light_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Ⅱ.使用该软件，可参加同事邀请你参加的会议，或者向同事发起新会议。"
+        android:textColor="@color/txt_light_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Ⅲ.会议相关的信息将由服务器统一管理，推送给会议发起者和参会者。"
+        android:textColor="@color/txt_light_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Ⅳ.MeetingComing的账号由公司统一管理分配，使用此软件，需向公司申请。"
+        android:textColor="@color/txt_light_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Ⅴ.当会议的重要值和紧急值达到5颗星，将必须参加，不能参加的按钮消失。"
+        android:textColor="@color/txt_light_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:text="Ctrl + Z presents"
+        android:textColor="@color/txt_light_gray" />
+
+</LinearLayout>

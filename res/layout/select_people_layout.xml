@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_white"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id="@+id/selectpeople_title"
+        layout="@layout/title_layout"/>
+    
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="@null" />
+    
+    <TextView
+        android:id="@+id/choose_duration"
+        style="@style/TextViewbiggold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/gold_button_style"
+        android:gravity="center"
+        android:text="选择会议时长" />
+
+</LinearLayout>

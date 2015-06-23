@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/duration_time_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/txt_light_gray"
+        android:textSize="16sp"
+        android:text="30分钟" />
+    
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="5dp"/>
+
+    <CheckBox
+        android:id="@+id/check_box_item"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center|right" />
+
+</LinearLayout>

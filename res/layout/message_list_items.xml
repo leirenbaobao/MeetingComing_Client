@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <LinearLayout
+        android:id="@+id/id_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:gravity="center|right" >
+
+        <Button
+            android:id="@+id/action_delete_right"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/red_button_style"
+            android:text="删除"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/white"
+            >
+        </Button>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff" >
+        
+        <ImageView
+            android:id="@+id/action_delete_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/action_delete"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/action_icon"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/action_delete_left"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/action_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/txt_light_gray"
+                android:text="由张天泽发起的会议即将开始"
+                android:textSize="@dimen/text_size_small_more" />
+            
+	        <TextView
+	            android:id="@+id/action_date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginTop="5dp"
+	            android:layout_below="@id/action_info"
+	            android:layout_marginRight="10dp"
+	            android:textColor="@color/txt_light_gray"
+	            android:text="4月11日"
+	            android:textSize="@dimen/text_size_small_more" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

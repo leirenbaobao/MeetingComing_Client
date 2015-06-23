@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/content_white" >
+    
+    <include
+        android:id="@+id/svn_title"
+        layout="@layout/title_layout" />
+    
+    <EditText
+        android:id="@+id/svn_address"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_selector"
+        android:hint="SVN网关登录地址"/>
+    
+    <EditText
+        android:id="@+id/svn_name"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_selector"
+        android:hint="请输入用户名"/>
+    
+    <EditText
+        android:id="@+id/svn_code"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_selector"
+        android:password="true"
+        android:hint="请输入密码"/>
+    
+    <TextView
+        android:id="@+id/svn_store"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gold_button_style"
+        android:gravity="center"
+        android:text="保存设置并登录"
+        android:textColor="@color/pure_white"
+        android:textSize="@dimen/text_size_middle" />
+    
+
+</LinearLayout>

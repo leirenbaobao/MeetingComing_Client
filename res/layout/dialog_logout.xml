@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listbk_meeting_handler"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确实要注销？"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/txt_light_gray"/>
+    
+    <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/dialog_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/txt_light_gray"
+        /> -->
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+        <TextView
+	        android:id="@+id/dialog_cancel"
+	        android:layout_width="140dp"
+	        android:layout_height="35dp"
+	        android:text="取消"
+	        android:gravity="center"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/blue_button_style"
+	        android:textColor="@color/pure_white"
+	        android:textSize="@dimen/text_size_small"/>
+        
+        <TextView
+	        android:id="@+id/dialog_sure"
+	        android:layout_width="140dp"
+	        android:layout_height="35dp"
+	        android:layout_marginLeft="10dp"
+	        android:text="确定"
+	        android:layout_gravity="center_horizontal"
+	        android:gravity="center"
+	        android:background="@drawable/gold_button_style"
+	        android:textColor="@color/pure_white"
+	        android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+    
+</RelativeLayout>

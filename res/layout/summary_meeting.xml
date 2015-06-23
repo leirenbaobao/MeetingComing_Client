@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/summary"
+        layout="@layout/title_layout" />
+
+    <TextView
+        android:id="@+id/pass_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="部门会议"
+        android:textColor="@color/txt_deep_gray"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="15sp"
+            android:text="会议地点：" />
+
+        <TextView
+            android:id="@+id/pass_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="15sp"
+            android:text="科技楼会议室1020" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="15sp"
+            android:text="会议时间：" />
+
+        <TextView
+            android:id="@+id/pass_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="15sp"
+            android:text="20140920" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="15sp"
+            android:text="发起者：" />
+
+        <TextView
+            android:id="@+id/pass_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_light_gray"
+            android:textSize="15sp"
+            android:text="张天泽" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/txt_light_gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="会议纪要："
+        android:textColor="@color/txt_deep_gray"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/pass_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/txt_light_gray"
+        android:textSize="16sp"
+        android:text="1、xxxxxxx\n2、xxxxxxx\n3、xxxxxxx\n4、xxxxxxx\n5、xxxxxxx\n" />
+
+</LinearLayout>

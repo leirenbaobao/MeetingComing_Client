@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:duration="80" android:drawable="@drawable/search_progress_01"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_02"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_03"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_04"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_05"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_06"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_07"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_08"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_09"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_10"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_11"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_12"/>
+	<item android:duration="80" android:drawable="@drawable/search_progress_13"/>
+
+</animation-list>

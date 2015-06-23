@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/content_white" >
+    
+    <include
+        android:id="@+id/personal_title"
+        layout="@layout/title_layout"/>
+    
+    <ImageView
+        android:id="@+id/head_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/lady_pic"
+        android:layout_gravity="center_horizontal"/>
+    
+    <TextView
+        android:id="@+id/personal_data_launch_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/txt_light_gray"
+        android:layout_gravity="center_horizontal"
+        android:text="共发起了10此会议"/>
+    
+    <TextView
+        android:id="@+id/personal_data_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/txt_light_gray"
+        android:layout_gravity="center_horizontal"
+        android:text="参加了20次，没有参加2次"/>
+    
+    <RelativeLayout
+        android:id="@+id/personal_name_area"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_input_bg"
+        >
+        <TextView
+            android:id="@+id/personal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名：徐强"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/txt_light_gray"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/personal_position_area"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_input_bg"
+        >
+        <TextView
+            android:id="@+id/personal_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="职位：Android工程师"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/txt_light_gray"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/personal_news_area"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_input_bg"
+        >
+        <TextView
+            android:id="@+id/personal_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的消息"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/txt_light_gray"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more"
+            />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/check_new_area"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_input_bg"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查更新"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small"
+            android:drawablePadding="250dp"
+            android:textColor="@color/txt_light_gray"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small"
+            android:drawablePadding="250dp"
+            android:textColor="@color/txt_light_gray"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/personal_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gold_button_style"
+        style="@style/TextViewbiggold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="注销"/>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/content_white" >
+    
+    <TextView
+        android:id="@+id/slidingmenu_title"
+        android:layout_width="match_parent"
+        android:background="@color/blue_unpressed"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:text="MeetingComing"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/pure_white"/>
+    
+    <RelativeLayout
+        android:id="@+id/meeting_personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slidingmenu_title"
+        android:background="@drawable/edit_input_bg"
+        >
+        <ImageView
+            android:id="@+id/personal_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/slidingmenu_pic"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人主页"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/personal_image"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/txt_deep_gray"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/meeting_to_hander_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meeting_personal"
+        android:background="@drawable/edit_input_bg"
+        >
+        <ImageView
+            android:id="@+id/handler_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/meeting_handle"/>
+        
+        <TextView
+            android:id="@+id/sliding_menu_handler_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待办会议"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/handler_image"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/txt_deep_gray"/>
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/meeting_new_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meeting_to_hander_area"
+        android:background="@drawable/edit_input_bg"
+        >
+        <ImageView
+            android:id="@+id/new_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/meeting_new"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发起新会议"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/new_image"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/txt_deep_gray"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/meeting_old_area"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/meeting_new_area"
+        android:background="@drawable/edit_input_bg"
+        >
+        <ImageView
+            android:id="@+id/old_image"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/meeting_old"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已结束会议"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/old_image"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/txt_deep_gray"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size_small_more"
+        android:textColor="@color/txt_light_gray"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:text="Ctrlz 工作室"/>
+    
+
+</RelativeLayout>

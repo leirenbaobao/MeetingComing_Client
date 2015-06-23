@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/duration_title"
+        layout="@layout/title_layout" />
+
+    <ListView
+        android:id="@+id/duration_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp"
+        android:divider="@color/txt_light_gray"
+        android:scrollingCache="@null"/>
+    
+
+    <TextView
+        android:id="@+id/launch_btn"
+        style="@style/TextViewbiggold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/gold_button_style"
+        android:gravity="center"
+        android:text="@string/meeting_launch" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        
+        <item name="android:configChanges">keyboardHidden|orientation</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateAlwaysHidden</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <!-- 等待对话框的设计 -->
+    <style name="LoadingDialog" parent="@style/AppBaseTheme">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 默认 是否模糊 为true -->
+    </style>
+
+    <!-- 对话框的风格 -->
+    <style name="DialogStyle" >
+        <item name="android:windowFrame">@null</item>
+        <!-- 该界面对应的前景图片 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否悬浮窗类型 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否带有title -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">16.0dip</item>
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">16.0dip</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+    
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+    
+    <style name="AnimationFade">
+    	<item name="android:windowEnterAnimation">@anim/slide_left_in</item>
+    	<item name="android:windowExitAnimation">@anim/slide_right_out</item>
+	</style>
+
+</resources>

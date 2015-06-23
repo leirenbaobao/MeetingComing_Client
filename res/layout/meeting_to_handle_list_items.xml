@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/handler_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/meeting_todo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="时间：2014-09-10"
+            android:textColor="@color/txt_deep_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/meeting_todo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="时间：2014-09-10"
+            android:textColor="@color/txt_deep_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/txt_light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/meeting_todo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会议名称：部门会议"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meeting_todo_lanucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="发起人：张天泽"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meeting_todo_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="地点：科技楼会议室1020"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="16sp" />
+            
+            <TextView
+                android:id="@+id/meeting_todo_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="会议内容：bug追踪"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/meeting_todo_timeleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="倒计时：2小时"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meeting_todo_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="备注：视频会议"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/txt_light_gray" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:text="紧急值:"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meeting_todo_urgency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:text="5颗星"
+                android:textColor="@color/gold_pressed"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:text="重要值:"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meeting_todo_important"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:text="5颗星"
+                android:textColor="@color/gold_pressed"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

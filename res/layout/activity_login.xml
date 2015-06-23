@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <include
+        android:id="@+id/login_title"
+        layout="@layout/title_layout" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/logo_pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="MeetingComing"
+        android:textColor="@color/gold_unpressed"
+        android:textSize="@dimen/text_size_middle" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/login_inputbox_bg"
+        android:gravity="center"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/iv_loginName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_name" />
+
+            <EditText
+                android:id="@+id/et_loginName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@null"
+                android:hint="请输入用户名"
+                android:maxLength="25"
+                android:singleLine="true"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="@dimen/text_size_small_more" />
+
+            <ImageView
+                android:id="@+id/btn_clear_loginName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.3"
+                android:background="@drawable/login_btn_clear" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30dip" >
+
+            <ImageView
+                android:id="@+id/iv_loginPasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_passwd" />
+
+            <EditText
+                android:id="@+id/et_loginPasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="17dp"
+                android:background="@null"
+                android:hint="请输入登录密码"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="@dimen/text_size_small_more" />
+
+            <ImageView
+                android:id="@+id/btn_clear_loginpasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:alpha="0.3"
+                android:background="@drawable/login_btn_clear" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp" >
+
+        <CheckBox
+            android:id="@+id/remember_code"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="记住密码？"
+            android:textColor="@color/txt_light_gray" />
+
+        <TextView
+            android:id="@+id/state_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="使用帮助"
+            android:textColor="@color/txt_light_gray" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gold_button_style"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/pure_white"
+        android:textSize="@dimen/text_size_middle" />
+
+</LinearLayout>

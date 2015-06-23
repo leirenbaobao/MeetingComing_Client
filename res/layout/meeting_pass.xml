@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/meeting_pass_title"
+        layout="@layout/title_layout" />
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/meeting_pass_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:scrollbars="@null"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/meeting_pass_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:dividerHeight="2dp"
+            android:scrollbars="@null" />
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+</LinearLayout>

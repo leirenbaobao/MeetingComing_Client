@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MeetingComing</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="meeting_address">会议地点</string>
+    <string name="meeting_theme">会议内容</string>
+    <string name="meeting_date">会议时间</string>
+    <string name="meeting_mark">备注</string>
+    <string name="meeting_launch">发起会议</string>
+    
+    <string name="meeting_name">会议名称</string>
+
+</resources>

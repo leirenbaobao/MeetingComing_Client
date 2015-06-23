@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 待办会议处的参加和取消按钮  蓝色 -->
+    <style name="TextViewSmallblue">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+        <item name="android:textColor">@color/blue_unpressed</item>
+    </style>
+
+    <!-- 待办会议处的不参加和推迟按钮  红色 -->
+    <style name="TextViewSmallred">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+        <item name="android:textColor">@color/red_unpressed</item>
+    </style>
+
+    <!-- 大的黄色的按钮 -->
+    <style name="TextViewbiggold">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+        <item name="android:textColor">@color/pure_white</item>
+    </style>
+
+    <style name="edit_style">
+        <item name="android:textColor">@color/txt_light_gray</item>
+        <item name="android:textSize">@dimen/text_size_small_more</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@drawable/listbk_meeting_over</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="text_style">
+        <item name="android:textColor">@color/txt_light_gray</item>
+        <item name="android:textSize">@dimen/text_size_small_more</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>    </style>
+
+</resources>

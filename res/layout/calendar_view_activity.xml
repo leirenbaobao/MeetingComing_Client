@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/newmeeting_title_calendar"
+        layout="@layout/title_layout" />
+
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dateTextAppearance="?android:attr/textAppearanceSmall"
+        android:selectedWeekBackgroundColor="@color/blue_unpressed_trans"
+        android:focusedMonthDateColor="@color/txt_deep_gray"
+        android:showWeekNumber="false"
+        android:weekNumberColor="@color/blue_unpressed"
+        android:weekSeparatorLineColor="@color/txt_deep_gray" />
+
+    <TextView
+        android:id="@+id/meeting_new_success_sure"
+        style="@style/TextViewbiggold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gold_button_style"
+        android:gravity="center"
+        android:text="确定并选择具体时间" />
+
+</LinearLayout>

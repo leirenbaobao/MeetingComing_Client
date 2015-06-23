@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/newmeeting_title"
+        layout="@layout/title_layout" />
+    
+    <EditText
+        android:id="@+id/meeting_name"
+        style="@style/edit_style"
+        android:maxLength="6"
+        android:hint="@string/meeting_name" />
+
+    <EditText
+        android:id="@+id/meeting_addr"
+        style="@style/edit_style"
+        android:maxLength="10"
+        android:hint="@string/meeting_address" />
+
+    <EditText
+        android:id="@+id/meeting_theme"
+        style="@style/edit_style"
+        android:layout_height="80dp"
+        android:hint="@string/meeting_theme" />
+
+    <EditText
+        android:id="@+id/meeting_mark"
+        style="@style/edit_style"
+        android:maxLength="6"
+        android:hint="@string/meeting_mark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="会议时间："
+            android:textColor="@color/blue_unpressed"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/meeting_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014-09-22 15:00"
+                android:textColor="@color/blue_unpressed"
+                android:textSize="@dimen/text_size_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blue_unpressed" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="紧要值："
+            android:textColor="@color/blue_unpressed"
+            android:textSize="@dimen/text_size_small" />
+
+        <RatingBar
+            android:id="@+id/decisive_level"
+            style="@style/roomRatingBar"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="重要值："
+            android:textColor="@color/blue_unpressed"
+            android:textSize="@dimen/text_size_small" />
+
+        <RatingBar
+            android:id="@+id/imporment_level"
+            style="@style/roomRatingBar"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/next_btn"
+        style="@style/TextViewbiggold"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/gold_button_style"
+        android:gravity="center"
+        android:text="选择联系人" />
+
+</LinearLayout>

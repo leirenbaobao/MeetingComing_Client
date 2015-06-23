@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+    
+    <Button
+        android:id="@+id/unattend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pure_white"
+        android:background="@drawable/red"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:text="不参加"/>
+    
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pure_white"
+        android:background="@drawable/blue"
+        android:gravity="left|center_vertical"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="25dp"
+        android:text="取消"/>
+    
+    <Button
+        android:id="@+id/putoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pure_white"
+        android:background="@drawable/yellow"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="推迟"/>
+    
+
+</LinearLayout>
